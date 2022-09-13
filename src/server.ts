@@ -2,7 +2,7 @@ import express from 'express'
 
 const app = express()
 
-app.get('/ads', (request,response) => {
+app.get('/ads', (request, response) => {
     return response.json([
         { 
             id: 1,
@@ -15,8 +15,12 @@ app.get('/ads', (request,response) => {
         { 
             id: 3,
             name: 'Anúncio 3'
+        },
+        { 
+            id: 4,
+            name: 'Anúncio 4'
         }
     ])
 })
 
-app.listen(3333)
+app.listen(3333);
